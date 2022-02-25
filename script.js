@@ -1,5 +1,6 @@
 "use strict";
 
+// Destination Function
 
 let destination = ["Aruba", "Spain", "Germany", "Jamacia"];
 
@@ -10,6 +11,8 @@ function destinationTrip(choiceTrip) {
 }
 
 let tripChoice = destinationTrip(destination);
+
+// Resturant Function
 
 
 let resturant = ["Ruth Chris Steak House", "The Melting Pot", "Fahrenheit 132", "The Capital Grille"];
@@ -22,11 +25,25 @@ function resturantTrip(choiceResturant) {
 let resturantChoice = resturantTrip(resturant);
 
 
+// Transportation Function
+
+let transportation = ["Airplane", "Cruise", "Train"]
+
+
+
+function transportationTrip(choiceTransportation) {
+  return choiceTransportation[Math.floor(Math.random()*choiceTransportation.length)];
+
+}
+
+let transportationChoice = resturantTrip(transportation);
+
+
 //  alert(`
 //  Below is your randomly generated trip!!!   
 
 //         Destination: ${tripChoice}
 //         Resturant: ${resturantChoice}
-//         Transportation: ${tripChoice}
+//         Transportation: ${transportationChoice}
 //         Entertainment: ${tripChoice}`); 
 
