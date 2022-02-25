@@ -39,11 +39,25 @@ function transportationTrip(choiceTransportation) {
 let transportationChoice = resturantTrip(transportation);
 
 
+// Entertainment Function
+
+let entertainment = ["Night Club", "Concert", "Historic Tour", "Beach"];
+
+
+
+function entertainmentTrip(choiceEntertainment) {
+  return choiceEntertainment[Math.floor(Math.random()*choiceEntertainment.length)];
+
+}
+
+let entertainmentChoice = resturantTrip(entertainment);
+
+
 //  alert(`
 //  Below is your randomly generated trip!!!   
 
 //         Destination: ${tripChoice}
 //         Resturant: ${resturantChoice}
 //         Transportation: ${transportationChoice}
-//         Entertainment: ${tripChoice}`); 
+//         Entertainment: ${entertainmentChoice}`); 
 
