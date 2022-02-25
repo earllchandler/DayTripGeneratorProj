@@ -36,7 +36,7 @@ function transportationTrip(choiceTransportation) {
 
 }
 
-let transportationChoice = resturantTrip(transportation);
+let transportationChoice = transportationTrip(transportation);
 
 
 // Entertainment Function
@@ -50,14 +50,14 @@ function entertainmentTrip(choiceEntertainment) {
 
 }
 
-let entertainmentChoice = resturantTrip(entertainment);
+let entertainmentChoice = entertainmentTrip(entertainment);
 
 
-//  alert(`
-//  Below is your randomly generated trip!!!   
+ alert(`
+ Below is your randomly generated trip!!!   
 
-//         Destination: ${tripChoice}
-//         Resturant: ${resturantChoice}
-//         Transportation: ${transportationChoice}
-//         Entertainment: ${entertainmentChoice}`); 
+        Destination: ${tripChoice}
+        Resturant: ${resturantChoice}
+        Transportation: ${transportationChoice}
+        Entertainment: ${entertainmentChoice}`); 
 
