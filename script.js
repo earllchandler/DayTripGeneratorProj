@@ -64,7 +64,6 @@ let entertainmentChoice = entertainmentTrip(entertainment);
 
 // while loop for printing final trip itenerary
 
-function secondChoices(){
 
 let continueIteration = true;
 
@@ -97,21 +96,22 @@ switch(changeSelection) {
       alert(`
       Below is your updated randomly generated trip!!!   
      
-             Destination: ${destinationTrip(destination)}
+             Destination:  ${tripChoice = destinationTrip(destination)}
              Resturant: ${resturantChoice}
              Transportation: ${transportationChoice}
              Entertainment: ${entertainmentChoice}`);
 
-             tripChoice = destinationTrip(destination);
         break;
     case "2":
       alert(`
       Below is your updated randomly generated trip!!!   
      
              Destination: ${tripChoice}
-             Resturant: ${resturantTrip(resturant)}
+             Resturant: ${resturantChoice = resturantTrip(resturant)}
              Transportation: ${transportationChoice}
              Entertainment: ${entertainmentChoice}`);
+
+             
         break;
     case "3":
       alert(`
@@ -119,7 +119,7 @@ switch(changeSelection) {
      
              Destination: ${tripChoice}
              Resturant: ${resturantChoice}
-             Transportation: ${transportationTrip(transportation)}
+             Transportation: ${transportationChoice = transportationTrip(transportation)}
              Entertainment: ${entertainmentChoice}`);
         break;
     case "4":
@@ -129,7 +129,7 @@ switch(changeSelection) {
              Destination: ${tripChoice}
              Resturant: ${resturantChoice}
              Transportation: ${transportationChoice}
-             Entertainment: ${entertainmentTrip(entertainment)}`);
+             Entertainment: ${entertainmentChoice = entertainmentTrip(entertainment)}`);
         break;
 
         
@@ -139,5 +139,3 @@ switch(changeSelection) {
     }
 
   }
-
-}
