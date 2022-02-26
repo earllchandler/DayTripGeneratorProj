@@ -53,11 +53,87 @@ function entertainmentTrip(choiceEntertainment) {
 let entertainmentChoice = entertainmentTrip(entertainment);
 
 
- alert(`
- Below is your randomly generated trip!!!   
+        alert(`
+        Below is your randomly generated trip!!!   
+       
+               Destination: ${tripChoice}
+               Resturant: ${resturantChoice}
+               Transportation: ${transportationChoice}
+               Entertainment: ${entertainmentChoice}`);
 
-        Destination: ${tripChoice}
-        Resturant: ${resturantChoice}
-        Transportation: ${transportationChoice}
-        Entertainment: ${entertainmentChoice}`); 
 
+// while loop for printing final trip itenerary
+
+
+
+let continueIteration = true;
+
+while(continueIteration === true) {
+  let userInput = prompt("Are you satisfied with your generted trip? YES or NO")
+    if(userInput.toLocaleUpperCase() === 'YES'){
+      alert(`
+      Your trip has been finalized!!! Have a great stay!   
+     
+             Destination: ${tripChoice}
+             Resturant: ${resturantChoice}
+             Transportation: ${transportationChoice}
+             Entertainment: ${entertainmentChoice}`);
+        continueIteration = false;
+
+
+    }
+
+    else if(userInput.toLocaleUpperCase() === 'NO'){
+      let changeSelection = prompt(`
+       Which feature would you like to change? 
+        Press 1 for Destination 
+        Press 2 for Restaurant 
+        Press 3 for Transportation 
+        Press 4 for Entertainment`
+      );
+
+switch(changeSelection) {
+    case "1":
+      alert(`
+      Below is your updated randomly generated trip!!!   
+     
+             Destination: ${destinationTrip(destination)}
+             Resturant: ${resturantChoice}
+             Transportation: ${transportationChoice}
+             Entertainment: ${entertainmentChoice}`);
+        break;
+    case "2":
+      alert(`
+      Below is your updated randomly generated trip!!!   
+     
+             Destination: ${tripChoice}
+             Resturant: ${resturantTrip(resturant)}
+             Transportation: ${transportationChoice}
+             Entertainment: ${entertainmentChoice}`);
+        break;
+    case "3":
+      alert(`
+      Below is your updated randomly generated trip!!!   
+     
+             Destination: ${tripChoice}
+             Resturant: ${resturantChoice}
+             Transportation: ${transportationTrip(transportation)}
+             Entertainment: ${entertainmentChoice}`);
+        break;
+    case "4":
+      alert(`
+      Below is your updated randomly generated trip!!!   
+     
+             Destination: ${tripChoice}
+             Resturant: ${resturantChoice}
+             Transportation: ${transportationChoice}
+             Entertainment: ${entertainmentTrip(entertainment)}`);
+        break;
+
+        
+    }
+
+
+    }
+
+  }
