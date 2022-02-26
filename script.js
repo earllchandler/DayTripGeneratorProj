@@ -2,7 +2,7 @@
 
 // Destination Function
 
-let destination = ["Aruba", "Spain", "Germany", "Jamacia"];
+let destination = ["Aruba", "Spain", "Germany", "Jamacia", "Bermuda", "Canada"];
 
 function destinationTrip(choiceTrip) {
   return choiceTrip[Math.floor(Math.random()*choiceTrip.length)];
@@ -15,7 +15,7 @@ let tripChoice = destinationTrip(destination);
 // Resturant Function
 
 
-let resturant = ["Ruth Chris Steak House", "The Melting Pot", "Fahrenheit 132", "The Capital Grille"];
+let resturant = ["Ruth Chris Steak House", "The Melting Pot", "Fahrenheit 132", "The Capital Grille", "Mortons"];
 
 function resturantTrip(choiceResturant) {
   return choiceResturant[Math.floor(Math.random()*choiceResturant.length)];
@@ -27,7 +27,7 @@ let resturantChoice = resturantTrip(resturant);
 
 // Transportation Function
 
-let transportation = ["Airplane", "Cruise", "Train"]
+let transportation = ["Airplane", "Cruise", "Train", "Bus", "Subway"]
 
 
 
@@ -41,7 +41,7 @@ let transportationChoice = transportationTrip(transportation);
 
 // Entertainment Function
 
-let entertainment = ["Night Club", "Concert", "Historic Tour", "Beach"];
+let entertainment = ["Night Club", "Concert", "Historic Tour", "Beach", "Theater"];
 
 
 
@@ -64,7 +64,7 @@ let entertainmentChoice = entertainmentTrip(entertainment);
 
 // while loop for printing final trip itenerary
 
-
+function secondChoices(){
 
 let continueIteration = true;
 
@@ -101,6 +101,8 @@ switch(changeSelection) {
              Resturant: ${resturantChoice}
              Transportation: ${transportationChoice}
              Entertainment: ${entertainmentChoice}`);
+
+             tripChoice = destinationTrip(destination);
         break;
     case "2":
       alert(`
@@ -137,3 +139,5 @@ switch(changeSelection) {
     }
 
   }
+
+}
